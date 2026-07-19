@@ -17,18 +17,29 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      # Generates a snake game from a github user (<github_user_name>) contributions graph, output a svg animation at <svg_out_path>
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      # Generates a snake game from a github user (<github_user_name>) contributions graph
       - name: Generate github-contribution-grid-snake.svg
         uses: Platane/snk/svg-only@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
-            dist/github-contribution-grid-snake.svg
-            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+            assets/snake.svg
+            dist/github-contribution-grid-snake.svg?palette=github-dark
 
-      # Push the content of <build_dir> to a branch
-      # the content will be available at https://raw.githubusercontent.com/<github_user>/<repository>/<target_branch>/<file>
-      - name: Push github-contribution-grid-snake.svg to GitHub Pages / Output Branch
+      # Commit generated assets/snake.svg directly to main branch
+      - name: Commit updated snake SVG to main
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add assets/snake.svg
+          git commit -m "chore: auto-update contribution snake SVG [skip ci]" || exit 0
+          git push origin main
+
+      # Also push to output branch for gh-pages compatibility
+      - name: Push to output branch
         uses: CrazyMaxdev/action-ghpages@v3
         with:
           target_branch: output

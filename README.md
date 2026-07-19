@@ -113,7 +113,7 @@ Official Site  : https://abhishekkumargupta.in
   <table border="0">
     <tr>
       <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api?username=abhikumar002&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="Abhishek's GitHub Stats" width="100%" />
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=abhikumar002&theme=tokyonight" alt="Abhishek's GitHub Stats" width="100%" />
       </td>
       <td width="50%">
         <img src="https://github-readme-streak-stats.herokuapp.com/?user=abhikumar002&theme=tokyonight&hide_border=true" alt="Abhishek's GitHub Streak" width="100%" />
@@ -121,7 +121,7 @@ Official Site  : https://abhishekkumargupta.in
     </tr>
     <tr>
       <td width="50%">
-        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=abhikumar002&theme=tokyonight&hide_border=true&layout=compact" alt="Top Languages" width="100%" />
+        <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=abhikumar002&theme=tokyonight" alt="Top Languages" width="100%" />
       </td>
       <td width="50%">
         <img src="https://github-readme-activity-graph.vercel.app/graph?username=abhikumar002&theme=tokyo-night&hide_border=true" alt="Activity Graph" width="100%" />
@@ -135,7 +135,7 @@ Official Site  : https://abhishekkumargupta.in
 ### 🔥 Contribution Snake
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/abhikumar002/abhikumar002/output/github-contribution-grid-snake.svg" alt="Snake Animation" width="100%" />
+  <img src="https://raw.githubusercontent.com/abhikumar002/abhikumar002/main/assets/snake.svg" alt="Snake Animation" width="100%" />
 </div>
 
 ---

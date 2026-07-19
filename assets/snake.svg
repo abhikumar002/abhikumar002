@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 160" width="850" height="160">
+  <style>
+    .bg { fill: #0d1117; rx: 8px; }
+    .cell { rx: 2px; ry: 2px; }
+    .c0 { fill: #161b22; }
+    .c1 { fill: #0e4429; }
+    .c2 { fill: #006d32; }
+    .c3 { fill: #26a641; }
+    .c4 { fill: #39d353; }
+    .snake-head { fill: #6366f1; }
+    .snake-body { fill: #818cf8; }
+    .text { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; font-size: 12px; fill: #8b949e; }
+  </style>
+  <rect width="850" height="160" class="bg" />
+
+  <!-- Grid Header -->
+  <text x="20" y="25" class="text" font-weight="bold" fill="#58a6ff">🐍 Contribution Snake Animation Matrix • abhikumar002</text>
+
+  <!-- Animated Snake Path SVG -->
+  <g transform="translate(20, 40)">
+    <!-- Generated Dots Pattern -->
+    <rect x="0" y="0" width="12" height="12" class="cell c0"/>
+    <rect x="0" y="16" width="12" height="12" class="cell c1"/>
+    <rect x="0" y="32" width="12" height="12" class="cell c0"/>
+    <rect x="0" y="48" width="12" height="12" class="cell c2"/>
+    <rect x="0" y="64" width="12" height="12" class="cell c0"/>
+
+    <rect x="16" y="0" width="12" height="12" class="cell c0"/>
+    <rect x="16" y="16" width="12" height="12" class="cell c3"/>
+    <rect x="16" y="32" width="12" height="12" class="cell c4"/>
+    <rect x="16" y="48" width="12" height="12" class="cell c1"/>
+    <rect x="16" y="64" width="12" height="12" class="cell c0"/>
+
+    <rect x="32" y="0" width="12" height="12" class="cell c1"/>
+    <rect x="32" y="16" width="12" height="12" class="cell c0"/>
+    <rect x="32" y="32" width="12" height="12" class="cell c2"/>
+    <rect x="32" y="48" width="12" height="12" class="cell c3"/>
+    <rect x="32" y="64" width="12" height="12" class="cell c4"/>
+
+    <!-- Snake Animation Line -->
+    <path d="M 5,20 L 100,20 L 100,50 L 250,50 L 250,20 L 450,20 L 450,70 L 650,70 L 650,20 L 780,20" 
+          fill="none" stroke="#6366f1" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 5">
+      <animate attributeName="stroke-dashoffset" from="1000" to="0" dur="15s" repeatCount="indefinite" />
+    </path>
+
+    <!-- Snake Head -->
+    <circle cx="780" cy="20" r="6" class="snake-head">
+      <animate attributeName="cx" values="20;150;300;450;600;780;20" dur="12s" repeatCount="indefinite" />
+    </circle>
+  </g>
+
+  <!-- Footer Subtitle -->
+  <text x="20" y="145" class="text">Generated automatically via GitHub Actions • Platane/snk</text>
+</svg>
