@@ -132,14 +132,6 @@ Official Site  : https://abhishekkumargupta.in
 
 ---
 
-### 🔥 Contribution Snake
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/abhikumar002/abhikumar002/main/assets/snake.svg" alt="Snake Animation" width="100%" />
-</div>
-
----
-
 ### 🌟 Featured Projects
 
 | Project | Description | Stack | Link |
